@@ -47,9 +47,24 @@ Rules:
 ## Verification Commands
 
 ```powershell
-# Reference sweep (run after phases 2, 3, 4)
-Select-String -Path *.tscn,*.gd,*.tres,project.godot,scenes\*\*.tscn,scenes\*\*.gd -Pattern 'OLD_NAME'
+# Reference integrity: every res:// path resolves, .import sidecars intact
+powershell -ExecutionPolicy Bypass -File tools/check_references.ps1
+#    -> "OK - all references resolve" / exit 0, or a list of MISSING refs
 
-# Godot headless validation
-& "C:\Users\Ivan\Downloads\Godot_v4.7.2-stable_win64.exe" --headless --path . --import
+# Godot headless import (must exit 0 with no ERROR/WARNING/invalid UID)
+& $godot --headless --path . --import
+
+# Runtime: boot the main scene for 180 frames (must exit 0, no script errors)
+& $godot --headless --path . --quit-after 180
+
+# Load every scene individually - catches broken ext_resource refs per scene
+Get-ChildItem -Recurse -File -Filter '*.tscn' | Where-Object { $_.FullName -notmatch '\\\.godot\\' } |
+  ForEach-Object { $rel = $_.FullName.Replace((Get-Location).Path + '\','').Replace('\','/')
+    & $godot --headless --path . "$rel" --quit-after 90 }
 ```
+
+`$godot` = `C:\Users\Ivan\Downloads\Godot_v4.7.2-stable_win64.exe\Godot_v4.7.2-stable_win64_console.exe`
+
+> Note: `git grep` is unreliable while moves/renames are unstaged (it reads tracked paths), and PowerShell's
+> `-ne`/`-eq` are case-**in**sensitive - use `[string]::Equals(..., [StringComparison]::Ordinal)` for path
+> comparisons, or a case-only rename will be silently skipped.

@@ -24,7 +24,7 @@ Branch: `refactor/project-structure`.
 
 40 assets renamed to `snake_case` (77 files incl. `.import` sidecars); 42 files had references rewritten
 (`.tscn` `ext_resource path=`, `.gd` `preload()` / `change_scene_to_file()`, `.import` `source_file`/`dest_files`).
-Full old→new list lives in the rename script (`%TEMP%\apex_phase3_rename.ps1`), key examples:
+Full old→new list is recoverable from git (`git log --follow` / `git show dd534f5 --stat`), key examples:
 
 | old | new |
 |---|---|

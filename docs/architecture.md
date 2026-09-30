@@ -7,6 +7,7 @@ Target file structure and conventions. **This is the source of truth** — new f
 ```
 race/
 ├── docs/                        # Project documentation (not shipped)
+├── tools/                       # Repo maintenance scripts (not shipped)
 ├── autoload/                    # Global singletons (registered in project.godot)
 │   └── game_manager.gd          # GameManager: carries selected car + target scene between scenes
 ├── scenes/                      # Every gameplay/menu scene, grouped by feature
