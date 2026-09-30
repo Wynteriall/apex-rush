@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://1ey7js2kbei7"]
+
+[ext_resource type="Texture2D" uid="uid://dfkn5k2cdmhme" path="res://assets/sprites/effects/impact_spark.png" id="1_uxj77"]
+[ext_resource type="Script" uid="uid://dyei2xwv5kmuq" path="res://scenes/effects/impact_spark.gd" id="2_jvhp4"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jvhp4"]
+atlas = ExtResource("1_uxj77")
+region = Rect2(0, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ydred"]
+atlas = ExtResource("1_uxj77")
+region = Rect2(24, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dwlrj"]
+atlas = ExtResource("1_uxj77")
+region = Rect2(48, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oct4u"]
+atlas = ExtResource("1_uxj77")
+region = Rect2(72, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t4hrs"]
+atlas = ExtResource("1_uxj77")
+region = Rect2(96, 0, 24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8ubcx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jvhp4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ydred")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dwlrj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oct4u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t4hrs")
+}],
+"loop": 0,
+"name": &"default",
+"speed": 20.0
+}]
+
+[node name="ImpactSpark" type="AnimatedSprite2D" unique_id=788642822]
+z_index = 3
+sprite_frames = SubResource("SpriteFrames_8ubcx")
+script = ExtResource("2_jvhp4")

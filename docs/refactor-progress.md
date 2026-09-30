@@ -9,7 +9,7 @@ Branch: `refactor/project-structure`.
 | 1 — docs | ✅ done | *(this commit)* | files created |
 | 2 — delete dead files | ✅ done | `3e378dc` | headless import OK |
 | 3 — rename assets | ✅ done | *(this commit)* | 127/127 `res://` refs resolve, import + runtime exit 0, 0 warnings |
-| 4 — move to feature-first | ⬜ pending | — | — |
+| 4 — move to feature-first | ✅ done | *(this commit)* | 127/127 refs resolve, 13/13 scenes load clean, import + runtime 0 errors |
 | 5 — verify + log | ⬜ pending | — | — |
 
 ## Notes / Decisions
@@ -52,6 +52,41 @@ as an art library. Decide later whether to delete or wire them up:
 - `.import` sidecar audit: every `source_file` exists and matches its sidecar name: **0 problems**
 - Godot 4.7.2 `--headless --import`: exit 0, **0 errors / 0 warnings** (two consecutive runs)
 - Godot 4.7.2 `--headless --quit-after 180` (boots `main_menu.tscn`): exit 0, no script errors
+
+## Phase 4 — Move Details
+
+75 resources moved (scripts, scenes, sprites, font, art sources), each carrying its `.import` / `.uid` sidecar;
+63 files had `res://` references rewritten. Legacy `Main menu/` and `powerups/` folders removed (now empty).
+Root now contains only `project.godot`, `default_bus_layout.tres`, `icon.svg` (+ dot-files) and `docs/`.
+
+```
+race/
+├── autoload/ game_manager.gd
+├── scenes/  menu(3) race(5 scenes+5 scripts) pickups(4) effects(2) results(2)
+├── assets/  sprites/{cars(4) track(13) ui(14) powerups(6) effects(4)} fonts/ source/
+└── docs/
+```
+
+UID safety: the autoload UID lives in `game_manager.gd.uid` and the main-scene UID in `main_menu.tscn`'s
+header, so both `project.godot` references survived the move untouched (verified by grep before moving).
+
+### Validation performed (after moves)
+
+- `res://` reference resolver: **127 refs checked, 0 missing**
+- `.import` sidecar audit: **0 problems**
+- Godot 4.7.2 `--headless --import` (2 runs, uid cache cleared): exit 0, **0 errors / 0 warnings**
+- **All 13 scenes** loaded individually with `--headless --quit-after 90`: exit 0, **0 errors each**
+  (no `ERROR`, `SCRIPT ERROR`, `invalid UID`, `non-existent resource`)
+- Main scene runtime `--headless --quit-after 180`: exit 0, **0 errors**
+- Scene-transition and `preload()` targets manually inspected — all point at the new locations
+  (`res://scenes/menu/...`, `res://scenes/race/...`, `res://scenes/results/...`, `res://assets/sprites/...`)
+
+### Baseline comparison (regression guard)
+
+`loading_scene.tscn` prints `WARNING: 6 ObjectDB instances were leaked at exit`. Reproduced **identically on the
+unrefactored `main` branch** (via a throwaway `git worktree`) in 3/3 runs → pre-existing, caused by the pending
+`await get_tree().create_timer(0.6).timeout` in `loading_scene.gd:48` being interrupted by forced shutdown.
+Not a refactor regression.
 
 ## Issues Encountered
 

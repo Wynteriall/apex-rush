@@ -34,10 +34,11 @@ race/
 │       └── defeat_scene.tscn/.gd
 └── assets/                      # Non-code resources
     ├── sprites/
-    │   ├── cars/                # playerr, rival_car, new_car_1/2
+    │   ├── cars/                # player_car, rival_car, new_car_1/2
     │   ├── track/               # race_track + props (trees, kerb, cones, tires, roofs, barriers)
-    │   ├── ui/                  # menu art, counters, panels, victory/defeat art, icons
-    │   └── powerups/            # powerup frames + icons
+    │   ├── ui/                  # menu art, counters, panels, loading/victory/defeat art
+    │   ├── powerups/            # powerup frames + icons (booster, oil, shield)
+    │   └── effects/             # smoke_puff, impact_spark, tire_skid_marks
     ├── fonts/                   # Minecraft.ttf
     └── source/                  # .piskel sources (art originals, excluded from exports)
 ```

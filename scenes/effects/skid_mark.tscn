@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://v4xwbseprvaf"]
+
+[ext_resource type="Texture2D" uid="uid://dqng288ugurkn" path="res://assets/sprites/effects/tire_skid_marks.png" id="1_d6o70"]
+[ext_resource type="Script" uid="uid://byuc7s6eeicte" path="res://scenes/effects/skid_marks.gd" id="2_h8yeh"]
+
+[node name="SkidMark" type="Sprite2D" unique_id=1953041171]
+z_index = 1
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("1_d6o70")
+script = ExtResource("2_h8yeh")

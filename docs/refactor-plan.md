@@ -30,7 +30,7 @@ Rules:
   - Post-check: grep every old filename across `*.tscn`/`*.gd`/`*.tres` → 0 hits
   - Commit: `refactor: rename assets to snake_case`
 
-- [ ] **Phase 4 — move into feature-first structure**
+- [x] **Phase 4 — move into feature-first structure**
   - Move scripts/scenes into `scenes/{menu,race,pickups,effects,results}/`
   - Move `game_manager.gd` into `autoload/`
   - Move assets into `assets/{sprites/{cars,track,ui,powerups},fonts,source}/`
