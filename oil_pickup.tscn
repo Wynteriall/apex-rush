@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dl8qrhlvpodul"]
+
+[ext_resource type="Script" uid="uid://cs6aaavusjsas" path="res://oil_pickup.gd" id="1_0w2il"]
+[ext_resource type="Texture2D" uid="uid://be1hxesg0fpox" path="res://powerups/Oil_ICON.png" id="2_gqfmj"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8ubcx"]
+
+[node name="OilPickup" type="Area2D" unique_id=1709311586]
+script = ExtResource("1_0w2il")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1652932620]
+texture = ExtResource("2_gqfmj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=678520464]
+shape = SubResource("CircleShape2D_8ubcx")

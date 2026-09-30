@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://b2ry31kv8eodw"]
+
+[ext_resource type="Script" uid="uid://b2ypj0yy1l83o" path="res://oil_slick.gd" id="1_ncu5x"]
+[ext_resource type="Texture2D" uid="uid://6rycqkkx6ij2" path="res://powerups/Oil_FRAMES (1).png" id="2_baqui"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8ubcx"]
+radius = 6.0
+
+[node name="OilSlick" type="Area2D" unique_id=1904639319]
+collision_layer = 16387
+collision_mask = 3
+script = ExtResource("1_ncu5x")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=140144846]
+texture = ExtResource("2_baqui")
+hframes = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1825141781]
+shape = SubResource("CircleShape2D_8ubcx")

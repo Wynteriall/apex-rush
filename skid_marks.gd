@@ -1,0 +1,8 @@
+extends Sprite2D
+
+func _ready() -> void:
+	# Keep the mark on the track for 3 seconds, then fade out and delete
+	var tween = create_tween()
+	tween.tween_interval(3.0)
+	tween.tween_property(self, "modulate:a", 0.0, 1.5)
+	tween.finished.connect(queue_free)

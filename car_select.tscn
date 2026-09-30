@@ -1,0 +1,81 @@
+[gd_scene format=3 uid="uid://b50out3yxyxev"]
+
+[ext_resource type="Script" uid="uid://1ky6evmefihn" path="res://car_select.gd" id="1_fuwbb"]
+[ext_resource type="Texture2D" uid="uid://c5p4ds6xoejef" path="res://Car Selection.png" id="2_4atiy"]
+[ext_resource type="FontFile" uid="uid://dqbwvlukoho2q" path="res://Minecraft.ttf" id="3_4atiy"]
+
+[node name="CarSelect" type="Control" unique_id=135501202]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fuwbb")
+
+[node name="Backgorund" type="TextureRect" parent="." unique_id=890522455]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("2_4atiy")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="CarDisplay" type="TextureRect" parent="." unique_id=1720597475]
+layout_mode = 0
+offset_left = 469.0
+offset_top = 167.0
+offset_right = 828.0
+offset_bottom = 352.0
+expand_mode = 1
+stretch_mode = 5
+
+[node name="PrevButton" type="Button" parent="." unique_id=1516553280]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.006
+anchor_bottom = 0.011000001
+offset_left = 324.0
+offset_top = 219.0
+offset_right = 356.16
+offset_bottom = 289.08
+mouse_default_cursor_shape = 2
+flat = true
+
+[node name="NextButton" type="Button" parent="." unique_id=377549196]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.006
+anchor_bottom = 0.011000001
+offset_left = 926.0
+offset_top = 219.0
+offset_right = 955.32
+offset_bottom = 289.08
+mouse_default_cursor_shape = 2
+flat = true
+
+[node name="SelectButton" type="Button" parent="." unique_id=263077875]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.006
+anchor_bottom = 0.011000001
+offset_left = 448.0
+offset_top = 621.0
+offset_right = 827.32
+offset_bottom = 683.08
+mouse_default_cursor_shape = 2
+flat = true
+
+[node name="CarNameLabel" type="Label" parent="." unique_id=1232333499]
+layout_mode = 0
+offset_left = 511.0
+offset_top = 480.0
+offset_right = 804.0
+offset_bottom = 595.0
+pivot_offset = Vector2(123, 37)
+theme_override_fonts/font = ExtResource("3_4atiy")
+theme_override_font_sizes/font_size = 27

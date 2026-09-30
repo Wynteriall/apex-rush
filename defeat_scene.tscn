@@ -1,0 +1,77 @@
+[gd_scene format=3 uid="uid://db2vpfuq4vsue"]
+
+[ext_resource type="Script" uid="uid://djo84726vwp5x" path="res://defeat_scene.gd" id="1_0aeba"]
+[ext_resource type="Texture2D" uid="uid://ctv4j6gegtq8m" path="res://defeat_scene.png" id="2_gh6fe"]
+[ext_resource type="FontFile" uid="uid://dqbwvlukoho2q" path="res://Minecraft.ttf" id="3_gh6fe"]
+
+[node name="DefeatScene" type="Control" unique_id=1932444677]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0aeba")
+
+[node name="Background" type="TextureRect" parent="." unique_id=718517985]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_gh6fe")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="PlayAgainButton" type="Button" parent="." unique_id=1589007966]
+layout_mode = 0
+offset_left = 281.0
+offset_top = 595.0
+offset_right = 289.0
+offset_bottom = 603.0
+scale = Vector2(35.29603, 11.517703)
+mouse_default_cursor_shape = 2
+flat = true
+
+[node name="MainMenuButton" type="Button" parent="." unique_id=2073763712]
+layout_mode = 0
+offset_left = 723.0
+offset_top = 594.0
+offset_right = 731.0
+offset_bottom = 602.0
+scale = Vector2(36.70053, 11.815099)
+mouse_default_cursor_shape = 2
+flat = true
+
+[node name="TotalTimeLabel" type="Label" parent="." unique_id=613657558]
+layout_mode = 0
+offset_left = 505.0
+offset_top = 402.0
+offset_right = 699.0
+offset_bottom = 453.0
+theme_override_fonts/font = ExtResource("3_gh6fe")
+theme_override_font_sizes/font_size = 40
+text = "00:00:00"
+
+[node name="BestLapLabel" type="Label" parent="." unique_id=1742248766]
+layout_mode = 0
+offset_left = 511.0
+offset_top = 457.0
+offset_right = 705.0
+offset_bottom = 508.0
+scale = Vector2(1, 0.9901265)
+theme_override_fonts/font = ExtResource("3_gh6fe")
+theme_override_font_sizes/font_size = 40
+text = "00:00:00"
+
+[node name="WinnerLabel" type="Label" parent="." unique_id=1847457535]
+layout_mode = 0
+offset_left = 502.0
+offset_top = 347.0
+offset_right = 696.0
+offset_bottom = 398.0
+scale = Vector2(1, 0.9901265)
+theme_override_fonts/font = ExtResource("3_gh6fe")
+theme_override_font_sizes/font_size = 40
+text = "."
