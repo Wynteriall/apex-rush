@@ -11,7 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://bir3fqo638yav" path="res://assets/sprites/track/traffic_cone.png" id="9_3v1im"]
 [ext_resource type="Texture2D" uid="uid://27kfc1s1fn82" path="res://assets/sprites/track/track_kerb.png" id="10_n3cok"]
 [ext_resource type="Texture2D" uid="uid://dl3ghcwf785ie" path="res://assets/sprites/track/broadleaf_tree.png" id="11_01nyc"]
-[ext_resource type="Texture2D" uid="uid://6etdqe3kh7fn" path="res://assets/sprites/track/marshal_post_1.png" id="12_km8rf"]
+[ext_resource type="Texture2D" uid="uid://6etdqe3kh7fn" path="res://assets/sprites/track/marshal_post.png" id="12_km8rf"]
 [ext_resource type="Texture2D" uid="uid://b7a6w81sw8hko" path="res://assets/sprites/track/broadleaf_tree_2.png" id="12_y5gkl"]
 [ext_resource type="Script" uid="uid://b36jfueay5krv" path="res://scenes/race/rival_path.gd" id="13_01nyc"]
 [ext_resource type="FontFile" uid="uid://dqbwvlukoho2q" path="res://assets/fonts/Minecraft.ttf" id="15_1s0yn"]
