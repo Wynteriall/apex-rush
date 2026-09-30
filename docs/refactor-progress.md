@@ -10,7 +10,7 @@ Branch: `refactor/project-structure`.
 | 2 — delete dead files | ✅ done | `3e378dc` | headless import OK |
 | 3 — rename assets | ✅ done | *(this commit)* | 127/127 `res://` refs resolve, import + runtime exit 0, 0 warnings |
 | 4 — move to feature-first | ✅ done | *(this commit)* | 127/127 refs resolve, 13/13 scenes load clean, import + runtime 0 errors |
-| 5 — verify + log | ⬜ pending | — | — |
+| 5 — verify + log | ✅ done | *(this commit)* | final import + runtime + 13-scene sweep all clean |
 
 ## Notes / Decisions
 
@@ -87,6 +87,53 @@ header, so both `project.godot` references survived the move untouched (verified
 unrefactored `main` branch** (via a throwaway `git worktree`) in 3/3 runs → pre-existing, caused by the pending
 `await get_tree().create_timer(0.6).timeout` in `loading_scene.gd:48` being interrupted by forced shutdown.
 Not a refactor regression.
+
+## Final Summary
+
+**Branch:** `refactor/project-structure` — 5 commits on top of `main` @ `1369bb4`, nothing else touched.
+
+| Commit | Subject |
+|---|---|
+| `7fc90ad` | docs: add architecture, refactor plan and progress log |
+| `3e378dc` | chore: remove unused backup and duplicate assets |
+| `dd534f5` | refactor: rename assets to snake_case |
+| `7e2042d` | refactor: reorganize project into feature-first structure |
+| *(this)*   | docs: record refactor completion and verification |
+
+**Before:** 96 project files (18 scripts, 20 scenes, ~50 sprites) dumped in the project root, plus two
+asset-only folders (`Main menu/`, `powerups/`), inconsistent filenames (`Broadleaf tree (2).png`,
+`Shiled_Frames.png`, `loadaing.png`, `upd impact.png`, a UUID-named PNG) and a stale `track_level_backup.tscn`.
+
+**After:** root holds only `project.godot`, `default_bus_layout.tres`, `icon.svg`, dot-files and `docs/`.
+Everything else lives in `autoload/`, `scenes/{menu,race,pickups,effects,results}/` and
+`assets/{sprites/{cars,track,ui,powerups,effects},fonts,source}/`, all `snake_case`.
+`project.godot` needed **zero** edits — every reference is UID-based and survived.
+
+**Diff size:** 145 files changed, 464 insertions, 851 deletions (net −387 lines, mostly the deleted backup scene).
+
+**Verification matrix (final, on the committed state)**
+
+| Check | Result |
+|---|---|
+| `res://` reference resolver (scenes/scripts/tres/import/project.godot) | 127 refs — **0 missing** |
+| `.import` sidecar audit (source exists + matches sidecar name) | **0 problems** |
+| `godot --headless --import` | exit 0 — **0 errors / 0 warnings** |
+| Per-scene load sweep (all 13 `.tscn`) | exit 0 — **0 errors each** |
+| `godot --headless --quit-after 180` (boots main menu) | exit 0 — **0 errors** |
+| `invalid UID` warnings | **none** (UIDs preserved through renames + moves) |
+| `project.godot` diff vs `main` | **empty** |
+| `loading_scene` ObjectDB-exit warning | pre-existing — reproduced on `main` 3/3 |
+
+**Follow-ups (not done — no code behaviour was changed in this refactor)**
+
+1. Orphaned art kept as an art library (see Phase 3 section) — delete or wire up.
+2. Dead scripts, unattached to any scene: `scenes/race/path_follow_2d.gd`, `scenes/race/path_follow_2d_rival.gd`,
+   `scenes/race/camera_2d.gd` (0 references each).
+3. Naming nits: `assets/sprites/track/racee.png` (unknown content/typo), `skid_mark.tscn` vs `skid_marks.gd`
+   (singular/plural mismatch), `rival_path.gd` is really the rival car controller.
+4. Large scripts that may deserve splitting later: `track_level.gd` (283 lines), `player_car.gd` (236).
+5. No `export_presets.cfg` in the repo — add before the first real build.
+6. Pre-existing: `loading_scene.gd:48` leaves a pending SceneTreeTimer at shutdown (harmless warning).
 
 ## Issues Encountered
 

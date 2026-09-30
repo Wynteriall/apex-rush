@@ -38,7 +38,7 @@ Rules:
   - Post-check: grep old paths → 0 hits; `project.godot` autoload + main scene still resolve
   - Commit: `refactor: reorganize project into feature-first structure`
 
-- [ ] **Phase 5 — verification & progress log**
+- [x] **Phase 5 — verification & progress log**
   - Godot headless import of the project with no script/scene errors
   - Manual flow check: menu → car select → loading → race → victory/defeat → back to menu
   - Update `refactor-progress.md`
