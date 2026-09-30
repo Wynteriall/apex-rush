@@ -7,7 +7,9 @@ what was verified → what is next.
 
 - **Structure:** feature-first (see `docs/architecture.md`) — `autoload/`, `scenes/<feature>/`,
   `assets/{sprites,fonts,audio,source}/`, `docs/`, `tools/`.
-- **Health:** `127 res:// paths checked | missing: 0`; headless import clean; 13 scenes load; runtime boots clean.
+- **Health:** `122 res:// paths checked | missing: 0`; headless import clean; 13 scenes load; runtime boots clean.
+  (The count dropped from 127 to 122 because five `.import` sidecars were deleted — each one counted a `res://`
+  `source_file` entry.)
 - **Branch:** `refactor/project-structure` (refactor complete, not yet merged to `main`).
 - **Only autoload:** `GameManager`. **Main scene:** `scenes/menu/main_menu.tscn`.
 - **Open work:** see `docs/backlog.md`.
@@ -22,11 +24,14 @@ what was verified → what is next.
 - Added `AGENTS.md` + `.clinerules` (hard rules + pointers), `docs/conventions.md`, `docs/workflow.md`,
   `docs/backlog.md`, `docs/session-log.md`.
 - Deleted `docs/refactor-plan.md` and `docs/refactor-progress.md` (one-shot artifacts; history preserved in git).
-- Deleted 3 unattached scripts and the orphaned art left behind by the removed backup scene.
-- Reserved `assets/audio/music/` and `assets/audio/sfx/` in the structure (folders created).
+- Deleted 3 unattached scripts (`camera_2d.gd`, `path_follow_2d.gd`, `path_follow_2d_rival.gd`).
+- Deleted 5 superseded art files after eyeballing each against its in-use counterpart, renamed 3 assets whose
+  names were stale or wrong, and reserved `assets/audio/music/` + `assets/audio/sfx/`.
+- Refreshed `docs/architecture.md` to the real tree plus a "Where do I put a new file?" table.
 
 **Verified**
-- All four checks in `docs/workflow.md` (reference check, headless import, 13-scene sweep, runtime boot).
+- All four checks in `docs/workflow.md`: `122 res:// paths / 0 missing`, 0 sidecar problems, headless import
+  0 errors/0 warnings, 13/13 scenes load, runtime boot clean. UIDs preserved through every rename.
 
 **Next:** `docs/backlog.md`.
 
