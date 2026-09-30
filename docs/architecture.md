@@ -17,7 +17,7 @@ race/
 ├── scenes/                      # Every gameplay/menu scene, grouped by feature
 │   ├── menu/
 │   │   ├── main_menu.tscn/.gd       # play, settings / credits / help modals
-│   │   ├── car_select.tscn/.gd      # car picker
+│   │   ├── car_select.tscn/.gd      # car picker (3-across carousel)
 │   │   └── loading_scene.tscn/.gd   # pre-race loading screen
 │   ├── race/
 │   │   ├── track_level.tscn/.gd     # Main race scene: HUD, laps, positions, spawning
