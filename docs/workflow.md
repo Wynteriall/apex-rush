@@ -32,7 +32,10 @@ Get-ChildItem -Recurse -File -Filter '*.tscn' | Where-Object { $_.FullName -notm
 & $godot --headless --path . --quit-after 180
 ```
 
-Expected baseline on a clean checkout: `127 res:// paths checked | missing: 0`, 13 scenes, 0 errors.
+Expected baseline on a clean checkout: `122 res:// paths checked | missing: 0`, 13 scenes, 0 errors.
+(The count fell from 127 to 122 when five superseded `.import` sidecars were deleted — each one contributed a
+`source_file` path. A count *lower* than 122 means a reference disappeared; a count above 122 is normal if you
+added references.)
 
 > `loading_scene.tscn` prints `WARNING: N ObjectDB instances were leaked at exit`. This is **pre-existing**
 > (a pending `create_timer` interrupted by the forced shutdown) and reproduced identically on the

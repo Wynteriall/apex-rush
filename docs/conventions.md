@@ -8,7 +8,7 @@ the same commit as the change that made it wrong.
 | Thing | Rule | Example |
 |---|---|---|
 | Folders, files (script / scene / asset) | `snake_case`, lowercase, no spaces or parentheses | `player_car.tscn`, `broadleaf_tree.png` |
-| Numbered variants | trailing `_1`, `_2` | `main_menu_1.png` |
+| Numbered variants | trailing `_1`, `_2` | `broadleaf_tree_2.png` |
 | GDScript class / node names | `PascalCase` | `PlayerCar`, `SkidMark` |
 | Variables & parameters | `snake_case` | `lap_count` |
 | Constants | `SCREAMING_SNAKE_CASE` | `OIL_SLICK_SCENE` |
