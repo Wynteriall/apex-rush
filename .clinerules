@@ -1,0 +1,18 @@
+# Apex Rush — project rules for Cline
+
+Read `AGENTS.md` in the repo root first, then the docs it points to (`docs/architecture.md`,
+`docs/conventions.md`, `docs/workflow.md`, `docs/backlog.md`, `docs/session-log.md`).
+
+Non-negotiables:
+
+- Never edit `.godot/` — it is a generated, git-ignored cache.
+- Run `powershell -ExecutionPolicy Bypass -File tools/check_references.ps1` after ANY file move, rename or
+  delete. It must print `OK - all references resolve`.
+- Moving/renaming an asset means: move it with its `.import`/`.uid` sidecar, preserve its original UID, and
+  update every `res://` reference in `.tscn` / `.gd` / `.import`.
+- `snake_case` for all folders and files; a scene and its script are colocated and share a name.
+- Put new files where `docs/architecture.md` says — never in the project root.
+- `GameManager` is the only autoload.
+- Verify with the four checks in `docs/workflow.md` before declaring work complete.
+- Commit per logical change; update `docs/architecture.md` on structure changes and append to
+  `docs/session-log.md` at the end of a session.
