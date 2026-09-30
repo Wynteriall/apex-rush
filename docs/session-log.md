@@ -21,6 +21,22 @@ recover with `git log -p -- docs/session-log.md`.
 
 ---
 
+## 2026-09-30 — Docs pruning (no archive)
+
+**Goal:** stop `session-log.md` growing unbounded; prune instead of archiving (git is the archive).
+
+**Changed** (on `main`, no branch)
+- `fb15e5e` docs: pruned oldest refactor entry (recoverable via `git log -p -- docs/session-log.md`),
+  refreshed `Current state` (123 paths, `main` clean), set standing rule: keep last ~3, newest on top.
+- `AGENTS.md` rule 11 now records the keep-last-3 policy.
+
+**Verified**
+- `tools/check_references.ps1`: `123 checked | missing: 0`. Docs-only, no Godot re-import needed.
+
+**Next:** per-entry pruning going forward — each new session entry drops the oldest past 3.
+
+---
+
 ## 2026-09-30 — Car select back button
 
 **Goal:** give `car_select` a visible top-left Back button that returns to the main menu, on the branch
