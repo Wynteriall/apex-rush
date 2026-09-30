@@ -10,14 +10,37 @@ what was verified → what is next.
 - **Health:** `122 res:// paths checked | missing: 0`; headless import clean; 13 scenes load; runtime boots clean.
   (The count dropped from 127 to 122 because five `.import` sidecars were deleted — each one counted a `res://`
   `source_file` entry.)
-- **Branch:** `main` — the `refactor/project-structure` work is merged. Start new work on a `feature/...`,
-  `fix/...` or `chore/...` branch.
+- **Branch:** `feature/car-select-back-button` — car select back button implemented and verified; ready to
+  review/merge into `main`. (`main` itself is clean: the refactor is merged.)
 - **Only autoload:** `GameManager`. **Main scene:** `scenes/menu/main_menu.tscn`.
 - **Open work:** see `docs/backlog.md`.
 - **Non-issue to expect:** the Godot **editor** caches the file list in `.godot/editor/filesystem_cache10`.
   After a set of renames it can still show old names (`main_menu_1.png`, `menu_preview.png`) in the
   FileSystem dock. Close and reopen the project; if entries persist, delete the whole `.godot/` folder and let
   it re-import. `.godot/` is generated and git-ignored — never edit it by hand.
+
+---
+
+## 2026-09-30 — Car select back button
+
+**Goal:** give `car_select` a visible top-left Back button that returns to the main menu, on the branch
+`feature/car-select-back-button`.
+
+**Changed** (branch `feature/car-select-back-button`)
+- `634f97a` docs: added `docs/car_select_back_button_plan.md` — the approved implementation plan.
+- `3621a84` feat: `scenes/menu/car_select.tscn` gained a `BackButton` node at (124, 60)–(264, 108), just
+  inside the frame's top-left (clear of the SELECT CAR banner): text "BACK", Minecraft font 24px, three
+  inline `StyleBoxFlat`s (maroon fill / rose border) matched to `car_selection.png`.
+- `scenes/menu/car_select.gd`: `MAIN_MENU_SCENE` const, `back_btn` via `get_node_or_null`, null-guarded
+  `pressed.connect` (the `main_menu.gd` idiom), `_on_back_pressed()` → `change_scene_to_file`, and
+  `ui_cancel` (Escape) → back for parity with `main_menu.gd`.
+
+**Verified**
+- All four checks in `docs/workflow.md`: `123 res:// paths checked | missing: 0` (+1 for the new const),
+  headless import exit 0 with 0 errors/0 warnings, per-scene sweep **13/13 OK** (exit 0, no error output),
+  runtime boot `--quit-after 180` exit 0, no script errors.
+
+**Next:** eyeball the button position in the editor, review and merge the branch into `main`.
 
 ---
 
