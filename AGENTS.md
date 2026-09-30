@@ -41,7 +41,7 @@ Top-down 2D arcade racing game. Local 2-player, laps + positions HUD, AI rivals,
 10. **Commits:** one logical change per commit, conventional prefixes (`docs:`, `chore:`, `refactor:`,
     `feat:`, `fix:`). Never mix a refactor with a feature.
 11. **Keep the docs alive:** update `docs/architecture.md` when the structure changes, append an entry to
-    `docs/session-log.md` at the end of every session.
+    `docs/session-log.md` at the end of every session (keep last ~3, older history lives in git).
 
 ## Quick map
 
