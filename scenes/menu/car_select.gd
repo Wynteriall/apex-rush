@@ -1,5 +1,7 @@
 extends Control
 
+const MAIN_MENU_SCENE: String = "res://scenes/menu/main_menu.tscn"
+
 var selected_car_texture: Texture2D = null
 # List of available cars (texture path + display name)
 var car_roster = [
@@ -28,12 +30,15 @@ var current_index: int = 0
 @onready var prev_btn: Button = get_node_or_null("PrevButton")
 @onready var next_btn: Button = get_node_or_null("NextButton")
 @onready var select_btn: Button = get_node_or_null("SelectButton")
+@onready var back_btn: Button = get_node_or_null("BackButton")
 
 func _ready() -> void:
 	# Connect Button Clicks
 	prev_btn.pressed.connect(_on_prev_pressed)
 	next_btn.pressed.connect(_on_next_pressed)
 	select_btn.pressed.connect(_on_select_pressed)
+	if back_btn:
+		back_btn.pressed.connect(_on_back_pressed)
 	
 	_update_car_view()
 
@@ -62,3 +67,11 @@ func _on_select_pressed() -> void:
 	
 	print("Car selected! Going to VS Loading Screen...")
 	get_tree().change_scene_to_file("res://scenes/menu/loading_scene.tscn")
+
+func _on_back_pressed() -> void:
+	get_tree().change_scene_to_file(MAIN_MENU_SCENE)
+
+# Parity with main_menu.gd: Escape returns to the main menu
+func _unhandled_input(event: InputEvent) -> void:
+	if event.is_action_pressed("ui_cancel"):
+		_on_back_pressed()
