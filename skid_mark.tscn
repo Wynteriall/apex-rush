@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://v4xwbseprvaf"]
 
-[ext_resource type="Texture2D" uid="uid://dqng288ugurkn" path="res://Tire skid marks.png" id="1_d6o70"]
+[ext_resource type="Texture2D" uid="uid://dqng288ugurkn" path="res://tire_skid_marks.png" id="1_d6o70"]
 [ext_resource type="Script" uid="uid://byuc7s6eeicte" path="res://skid_marks.gd" id="2_h8yeh"]
 
 [node name="SkidMark" type="Sprite2D" unique_id=1953041171]

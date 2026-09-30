@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://7k2861jobpry"
-path="res://.godot/imported/Lap Counter-1.png-7449fc837517980efa5b06f316548f51.ctex"
+uid="uid://ctme17l71hbn3"
+path="res://.godot/imported/armco_guardrail.png-226239cf10220d2b33903b1b1bd58bad.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Lap Counter-1.png"
-dest_files=["res://.godot/imported/Lap Counter-1.png-7449fc837517980efa5b06f316548f51.ctex"]
+source_file="res://armco_guardrail.png"
+dest_files=["res://.godot/imported/armco_guardrail.png-226239cf10220d2b33903b1b1bd58bad.ctex"]
 
 [params]
 

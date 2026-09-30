@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cwd07bok5ob44"
-path="res://.godot/imported/Red gable roof.png-c2fd70f7f4b4f29dd976d61eeb4c5e77.ctex"
+uid="uid://b7a6w81sw8hko"
+path="res://.godot/imported/broadleaf_tree_2.png-0351f2a4861d0ba2cf98359977336867.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Red gable roof.png"
-dest_files=["res://.godot/imported/Red gable roof.png-c2fd70f7f4b4f29dd976d61eeb4c5e77.ctex"]
+source_file="res://broadleaf_tree_2.png"
+dest_files=["res://.godot/imported/broadleaf_tree_2.png-0351f2a4861d0ba2cf98359977336867.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://db0khi8ce77al"
-path="res://.godot/imported/Exhaust smoke (2).png-b07e72ed38c79f6af5425b867bd40e0a.ctex"
+uid="uid://cymflsj3eaya7"
+path="res://.godot/imported/impact_sparks.png-ae92b6cdd52d5c12bbed4442216d9f2d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Exhaust smoke (2).png"
-dest_files=["res://.godot/imported/Exhaust smoke (2).png-b07e72ed38c79f6af5425b867bd40e0a.ctex"]
+source_file="res://impact_sparks.png"
+dest_files=["res://.godot/imported/impact_sparks.png-ae92b6cdd52d5c12bbed4442216d9f2d.ctex"]
 
 [params]
 

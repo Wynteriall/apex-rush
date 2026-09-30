@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cymflsj3eaya7"
-path="res://.godot/imported/Impact sparks.png-fd92563c06a0a4e97e08163635d2736f.ctex"
+uid="uid://2tp81jgehmku"
+path="res://.godot/imported/loading.png-10b6cb5dd686e9bfba85d6e0eaa9ca8e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Impact sparks.png"
-dest_files=["res://.godot/imported/Impact sparks.png-fd92563c06a0a4e97e08163635d2736f.ctex"]
+source_file="res://loading.png"
+dest_files=["res://.godot/imported/loading.png-10b6cb5dd686e9bfba85d6e0eaa9ca8e.ctex"]
 
 [params]
 

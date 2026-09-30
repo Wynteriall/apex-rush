@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bqby2ejgrhj5f"
-path="res://.godot/imported/Settings Panel - 2.png-79718cc98f67193c416da35581c261ff.ctex"
+uid="uid://cn28qnxwxenlq"
+path="res://.godot/imported/red_gable_roof_1.png-3c7c512d3f0edba0006ccca27a00f4c3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Settings Panel - 2.png"
-dest_files=["res://.godot/imported/Settings Panel - 2.png-79718cc98f67193c416da35581c261ff.ctex"]
+source_file="res://red_gable_roof_1.png"
+dest_files=["res://.godot/imported/red_gable_roof_1.png-3c7c512d3f0edba0006ccca27a00f4c3.ctex"]
 
 [params]
 

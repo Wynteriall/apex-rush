@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dyj18ebrymfsa"
-path="res://.godot/imported/Place Counter-1.png-9ddeed737806a2cb41d164621678c8d2.ctex"
+uid="uid://db0khi8ce77al"
+path="res://.godot/imported/exhaust_smoke_2.png-ae44ae38000d573fceb900a4b2e4d37f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Place Counter-1.png"
-dest_files=["res://.godot/imported/Place Counter-1.png-9ddeed737806a2cb41d164621678c8d2.ctex"]
+source_file="res://exhaust_smoke_2.png"
+dest_files=["res://.godot/imported/exhaust_smoke_2.png-ae44ae38000d573fceb900a4b2e4d37f.ctex"]
 
 [params]
 

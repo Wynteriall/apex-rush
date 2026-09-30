@@ -15,9 +15,9 @@ extends Node2D
 # Scenes
 const OIL_SLICK_SCENE = preload("res://oil_slick.tscn")
 const OIL_PICKUP_SCENE = preload("res://oil_pickup.tscn")
-const OIL_ICON = preload("res://powerups/Oil_ICON.png")
-const SHIELD_ICON = preload("res://Shield_ICON.png")
-const NITRO_ICON = preload("res://powerups/Booster_ICON.png")
+const OIL_ICON = preload("res://powerups/oil_icon.png")
+const SHIELD_ICON = preload("res://shield_icon.png")
+const NITRO_ICON = preload("res://powerups/booster_icon.png")
 
 const TOTAL_LAPS: int = 3
 
@@ -58,9 +58,9 @@ func _setup_marker_textures() -> void:
 	# 2. Update Rival Marker to an opposing car
 	if rival_marker is TextureRect:
 		# If player picked the red car (Rival_Car), set rival to teal (playerr), or vice versa
-		var rival_default_tex = preload("res://Rival_Car.png")
+		var rival_default_tex = preload("res://rival_car.png")
 		if GameManager.selected_car_texture == rival_default_tex:
-			rival_marker.texture = preload("res://playerr.png")
+			rival_marker.texture = preload("res://player_car.png")
 		else:
 			rival_marker.texture = rival_default_tex
 			

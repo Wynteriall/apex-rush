@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b0lw7ha8bl3fs"
-path="res://.godot/imported/Help Panel-2.png-33a5adc1e90b94533ff6bcff2bd5e080.ctex"
+uid="uid://c5p4ds6xoejef"
+path="res://.godot/imported/car_selection.png-1eff52c445bf0619a288ff1b29a151ce.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Help Panel-2.png"
-dest_files=["res://.godot/imported/Help Panel-2.png-33a5adc1e90b94533ff6bcff2bd5e080.ctex"]
+source_file="res://car_selection.png"
+dest_files=["res://.godot/imported/car_selection.png-1eff52c445bf0619a288ff1b29a151ce.ctex"]
 
 [params]
 

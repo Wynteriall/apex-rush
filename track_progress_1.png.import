@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bpe2hhy0b3lff"
-path="res://.godot/imported/Marshal post.png-2b4ca62759662926c3d4bdfbe6788207.ctex"
+uid="uid://3pbxwpgml2ug"
+path="res://.godot/imported/track_progress_1.png-a82298439eedc9624972f59dd4997404.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Marshal post.png"
-dest_files=["res://.godot/imported/Marshal post.png-2b4ca62759662926c3d4bdfbe6788207.ctex"]
+source_file="res://track_progress_1.png"
+dest_files=["res://.godot/imported/track_progress_1.png-a82298439eedc9624972f59dd4997404.ctex"]
 
 [params]
 

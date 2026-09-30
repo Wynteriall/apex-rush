@@ -2,7 +2,7 @@ extends Control
 
 # --- Texture References ---
 # Default fallback rival texture (adjust path to your rival car sprite)
-@export var default_rival_texture: Texture2D = preload("res://Rival_Car.png")
+@export var default_rival_texture: Texture2D = preload("res://rival_car.png")
 
 # --- Node References ---
 @onready var player_display: TextureRect = $PlayerCarDisplay
@@ -21,7 +21,7 @@ func _ready() -> void:
 		player_display.texture = GameManager.selected_car_texture
 	else:
 		# Fallback if launched directly for testing
-		player_display.texture = preload("res://playerr.png")
+		player_display.texture = preload("res://player_car.png")
 
 	# 2. Display Rival Car
 	rival_display.texture = default_rival_texture

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b50out3yxyxev"]
 
 [ext_resource type="Script" uid="uid://1ky6evmefihn" path="res://car_select.gd" id="1_fuwbb"]
-[ext_resource type="Texture2D" uid="uid://c5p4ds6xoejef" path="res://Car Selection.png" id="2_4atiy"]
+[ext_resource type="Texture2D" uid="uid://c5p4ds6xoejef" path="res://car_selection.png" id="2_4atiy"]
 [ext_resource type="FontFile" uid="uid://dqbwvlukoho2q" path="res://Minecraft.ttf" id="3_4atiy"]
 
 [node name="CarSelect" type="Control" unique_id=135501202]

@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://bb8k3si8225ph"]
 
 [ext_resource type="Script" uid="uid://bfaq1r8mk8y8o" path="res://main_menu.gd" id="1_7vrkn"]
-[ext_resource type="Texture2D" uid="uid://bydmrxj4q6an5" path="res://Main menu/MAIN MENU (1).png" id="2_7vrkn"]
-[ext_resource type="Texture2D" uid="uid://b0lw7ha8bl3fs" path="res://Help Panel-2.png" id="3_fu7sn"]
-[ext_resource type="Texture2D" uid="uid://bqby2ejgrhj5f" path="res://Settings Panel - 2.png" id="4_glbon"]
-[ext_resource type="Texture2D" uid="uid://d0cy18hfdioss" path="res://b2bc970b-633b-4c93-b562-7f9ed06f6625_removalai_preview.png" id="4_jix8l"]
+[ext_resource type="Texture2D" uid="uid://bydmrxj4q6an5" path="res://Main menu/main_menu_1.png" id="2_7vrkn"]
+[ext_resource type="Texture2D" uid="uid://b0lw7ha8bl3fs" path="res://help_panel_2.png" id="3_fu7sn"]
+[ext_resource type="Texture2D" uid="uid://bqby2ejgrhj5f" path="res://settings_panel_2.png" id="4_glbon"]
+[ext_resource type="Texture2D" uid="uid://d0cy18hfdioss" path="res://menu_preview.png" id="4_jix8l"]
 
 [node name="Main Menu" type="Control" unique_id=1947293571]
 layout_mode = 3

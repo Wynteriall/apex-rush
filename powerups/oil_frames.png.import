@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d0cy18hfdioss"
-path="res://.godot/imported/b2bc970b-633b-4c93-b562-7f9ed06f6625_removalai_preview.png-582030b37b2457daaa86deb7723b74ca.ctex"
+uid="uid://6rycqkkx6ij2"
+path="res://.godot/imported/oil_frames.png-b3c81ecd23546c747caa18ad5ce9c2df.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://b2bc970b-633b-4c93-b562-7f9ed06f6625_removalai_preview.png"
-dest_files=["res://.godot/imported/b2bc970b-633b-4c93-b562-7f9ed06f6625_removalai_preview.png-582030b37b2457daaa86deb7723b74ca.ctex"]
+source_file="res://powerups/oil_frames.png"
+dest_files=["res://.godot/imported/oil_frames.png-b3c81ecd23546c747caa18ad5ce9c2df.ctex"]
 
 [params]
 

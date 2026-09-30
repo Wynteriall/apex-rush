@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cvyoa8mvxd5kg"
-path="res://.godot/imported/upd smoke.png-f18a8a51a09a12ab0acfedc9f3dbaf90.ctex"
+uid="uid://bir3fqo638yav"
+path="res://.godot/imported/traffic_cone.png-900b5ceb7f87e773e3ba16b3c51bcffa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://upd smoke.png"
-dest_files=["res://.godot/imported/upd smoke.png-f18a8a51a09a12ab0acfedc9f3dbaf90.ctex"]
+source_file="res://traffic_cone.png"
+dest_files=["res://.godot/imported/traffic_cone.png-900b5ceb7f87e773e3ba16b3c51bcffa.ctex"]
 
 [params]
 

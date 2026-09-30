@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://6etdqe3kh7fn"
-path="res://.godot/imported/Marshal post (1).png-52d8d7b4fe04390df9759ff7d0380ee2.ctex"
+uid="uid://7k2861jobpry"
+path="res://.godot/imported/lap_counter_1.png-7714d82eb50ed6301a0c80ea52336be8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Marshal post (1).png"
-dest_files=["res://.godot/imported/Marshal post (1).png-52d8d7b4fe04390df9759ff7d0380ee2.ctex"]
+source_file="res://lap_counter_1.png"
+dest_files=["res://.godot/imported/lap_counter_1.png-7714d82eb50ed6301a0c80ea52336be8.ctex"]
 
 [params]
 

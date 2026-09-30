@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://nsrkpt2pff6y"
-path="res://.godot/imported/NewCar1.png-e0151d0b32f72777ef4670522709fc63.ctex"
+uid="uid://dqng288ugurkn"
+path="res://.godot/imported/tire_skid_marks.png-85a53821e5c3add4b9a18016d9c3e909.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://NewCar1.png"
-dest_files=["res://.godot/imported/NewCar1.png-e0151d0b32f72777ef4670522709fc63.ctex"]
+source_file="res://tire_skid_marks.png"
+dest_files=["res://.godot/imported/tire_skid_marks.png-85a53821e5c3add4b9a18016d9c3e909.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dks50a7xg764x"
-path="res://.godot/imported/MAIN MENU.png-6e91a641270fc359d54dc86a3c5ce517.ctex"
+uid="uid://dl3ghcwf785ie"
+path="res://.godot/imported/broadleaf_tree.png-de15a8a9ecd472bf7a4bb6cfd0490217.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Main menu/MAIN MENU.png"
-dest_files=["res://.godot/imported/MAIN MENU.png-6e91a641270fc359d54dc86a3c5ce517.ctex"]
+source_file="res://broadleaf_tree.png"
+dest_files=["res://.godot/imported/broadleaf_tree.png-de15a8a9ecd472bf7a4bb6cfd0490217.ctex"]
 
 [params]
 

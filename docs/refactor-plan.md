@@ -11,20 +11,20 @@ Rules:
 
 ## Phases
 
-- [ ] **Phase 0 — branch**
+- [x] **Phase 0 — branch**
   - `git checkout -b refactor/project-structure`
   - Commit: *(none, branch only)*
 
-- [ ] **Phase 1 — docs**
+- [x] **Phase 1 — docs**
   - Create `docs/` with `architecture.md`, `refactor-plan.md`, `refactor-progress.md`
   - Commit: `docs: add architecture and refactor plan`
 
-- [ ] **Phase 2 — delete dead files**
+- [x] **Phase 2 — delete dead files**
   - Delete `track_level_backup.tscn`, `defeatscene.png`, `creditmem (1).png` (+ their `.import` files)
   - Pre-check: grep each name in `*.tscn` / `*.gd` → must be 0 hits
   - Commit: `chore: remove unused backup and duplicate assets`
 
-- [ ] **Phase 3 — rename assets to snake_case**
+- [x] **Phase 3 — rename assets to snake_case**
   - Rename every asset with spaces/parens/typos; update `ext_resource path=` in `.tscn` and `preload()` strings in `.gd`
   - Notable: `loadaing.png` → `loading.png`, `b2bc970b-..._removalai_preview.png` → `menu_preview.png`, `Shiled_Frames.png` → `shield_frames.png`
   - Post-check: grep every old filename across `*.tscn`/`*.gd`/`*.tres` → 0 hits

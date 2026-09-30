@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://6rycqkkx6ij2"
-path="res://.godot/imported/Oil_FRAMES (1).png-6377f922cad1804b1a541226fd98e28f.ctex"
+uid="uid://bpe2hhy0b3lff"
+path="res://.godot/imported/marshal_post.png-1a670fda30cd6e6fc00281d5082e1e59.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://powerups/Oil_FRAMES (1).png"
-dest_files=["res://.godot/imported/Oil_FRAMES (1).png-6377f922cad1804b1a541226fd98e28f.ctex"]
+source_file="res://marshal_post.png"
+dest_files=["res://.godot/imported/marshal_post.png-1a670fda30cd6e6fc00281d5082e1e59.ctex"]
 
 [params]
 

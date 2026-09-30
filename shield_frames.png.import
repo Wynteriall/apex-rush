@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://27kfc1s1fn82"
-path="res://.godot/imported/track-kerb.png-ce37eb6a21964bcad252ef0e9e65ed28.ctex"
+uid="uid://dl8hyfyptcpuv"
+path="res://.godot/imported/shield_frames.png-591f8d5fbe6e93ba60d051e4d807d5ad.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://track-kerb.png"
-dest_files=["res://.godot/imported/track-kerb.png-ce37eb6a21964bcad252ef0e9e65ed28.ctex"]
+source_file="res://shield_frames.png"
+dest_files=["res://.godot/imported/shield_frames.png-591f8d5fbe6e93ba60d051e4d807d5ad.ctex"]
 
 [params]
 

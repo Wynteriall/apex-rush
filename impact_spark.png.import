@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dl8hyfyptcpuv"
-path="res://.godot/imported/Shiled_Frames.png-4bf60d5e2a2661ff3132d16bd4141939.ctex"
+uid="uid://dfkn5k2cdmhme"
+path="res://.godot/imported/impact_spark.png-0bf4d7063cf0b62bc61513cf4d412b1e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Shiled_Frames.png"
-dest_files=["res://.godot/imported/Shiled_Frames.png-4bf60d5e2a2661ff3132d16bd4141939.ctex"]
+source_file="res://impact_spark.png"
+dest_files=["res://.godot/imported/impact_spark.png-0bf4d7063cf0b62bc61513cf4d412b1e.ctex"]
 
 [params]
 

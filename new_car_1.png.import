@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dl3ghcwf785ie"
-path="res://.godot/imported/Broadleaf tree.png-3382564a94c464d3af2faa36eae338ec.ctex"
+uid="uid://nsrkpt2pff6y"
+path="res://.godot/imported/new_car_1.png-bd84f250d8789a4abc9ac74990167787.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Broadleaf tree.png"
-dest_files=["res://.godot/imported/Broadleaf tree.png-3382564a94c464d3af2faa36eae338ec.ctex"]
+source_file="res://new_car_1.png"
+dest_files=["res://.godot/imported/new_car_1.png-bd84f250d8789a4abc9ac74990167787.ctex"]
 
 [params]
 

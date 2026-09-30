@@ -5,19 +5,19 @@ var selected_car_texture: Texture2D = null
 var car_roster = [
 	{
 		"name": "TEAL SPRINTER",
-		"texture": preload("res://playerr.png") # Update with your exact teal car path!
+		"texture": preload("res://player_car.png") # Update with your exact teal car path!
 	},
 	{
 		"name": "CRIMSON RIVAL",
-		"texture": preload("res://Rival_Car.png") # Update with your exact red car path!
+		"texture": preload("res://rival_car.png") # Update with your exact red car path!
 	},	
 	{
 		"name": "DUST VANISHER",
-		"texture": preload("res://NewCar1.png") # Update with your exact red car path!
+		"texture": preload("res://new_car_1.png") # Update with your exact red car path!
 	},
 	{
 		"name": "GREEN GOBLIN",
-		"texture": preload("res://NewCar2.png") # Update with your exact red car path!
+		"texture": preload("res://new_car_2.png") # Update with your exact red car path!
 	}
 ]
 

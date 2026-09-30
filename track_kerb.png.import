@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bxo6pr5xx5syb"
-path="res://.godot/imported/playerr.png-976ea55d2f83cc90471795d109668fa0.ctex"
+uid="uid://27kfc1s1fn82"
+path="res://.godot/imported/track_kerb.png-870374e76990b0c9debdde4b8ae21fe1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://playerr.png"
-dest_files=["res://.godot/imported/playerr.png-976ea55d2f83cc90471795d109668fa0.ctex"]
+source_file="res://track_kerb.png"
+dest_files=["res://.godot/imported/track_kerb.png-870374e76990b0c9debdde4b8ae21fe1.ctex"]
 
 [params]
 

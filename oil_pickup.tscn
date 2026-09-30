@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dl8qrhlvpodul"]
 
 [ext_resource type="Script" uid="uid://cs6aaavusjsas" path="res://oil_pickup.gd" id="1_0w2il"]
-[ext_resource type="Texture2D" uid="uid://be1hxesg0fpox" path="res://powerups/Oil_ICON.png" id="2_gqfmj"]
+[ext_resource type="Texture2D" uid="uid://be1hxesg0fpox" path="res://powerups/oil_icon.png" id="2_gqfmj"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_8ubcx"]
 
